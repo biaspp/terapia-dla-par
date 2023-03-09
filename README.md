@@ -4,8 +4,6 @@ Aplikacja internetowa oferująca terapię dla par online, zaprojektowana w HTML,
 ![_C__Users_Kasia_Desktop_projekt_projekt_index html (1)](https://user-images.githubusercontent.com/94643456/224186097-cfbe5fe9-153f-4845-a5ff-b8b1833b880b.png)
 
 ## Logowanie
-![_C__Users_Kasia_Desktop_projekt_projekt_login html(iPhone SE)](https://user-images.githubusercontent.com/94643456/224186986-43de9e83-17db-4f68-a8df-49c244499811.png)
-
 ![_C__Users_Kasia_Desktop_projekt_projekt_login html](https://user-images.githubusercontent.com/94643456/224186994-0d774415-c9bc-4f47-9b81-c9cedda7a8b7.png)
 
 
