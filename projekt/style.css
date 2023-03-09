@@ -1,0 +1,583 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/tlo.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}   
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_links{
+    flex: 1;
+    text-align: right;
+}
+.nav_links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav_links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav_links ul li:not(:first-child,.bezpodkreslenia, .rejestracja-btn)::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #EDC6C9;
+    display: block;
+    margin: auto;
+    transition: 0.6s;
+}
+
+.nav_links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+
+}
+
+.hero-btn:hover{
+    border: 1px solid #EDC6C9;
+    background: #EDC6C9;
+    transition: 1s;
+
+}
+
+.terapia{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: rgb(18, 18, 18);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.terapia-col{
+    flex-basis: 31%;
+    background: #d0e5c6;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box; 
+    transition: 0.5s;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.terapia-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+.specjalisci{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.specjalisci-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+
+}
+.specjalisci-col img{
+    width: 100%;
+    display: block;
+
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: #D4DEDD;
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+
+}
+
+.artykuly{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.artykuly-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.artykuly-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.artykuly-col p{
+    padding: 0;
+    text-align:center;
+}
+.artykuly-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align:center;
+}
+
+.komentarze{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+
+}
+.komentarze-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+
+}
+
+.komentarze-col img{
+    height: 40px;
+    margin-left:5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.komentarze-col p{
+    padding: 0;
+}
+.komentarze-col h3{
+    margin-top: 15px;
+    text-align: left;
+
+} 
+
+.cta{
+    margin:100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/tlo2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+
+}
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+
+}
+.footer h4{
+    margin-bottom: 1;
+    margin-top: 1;
+    font-weight: 600;
+}
+
+.icons .fa{
+    margin:0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+/*--------------- nasi terapeuci ------------*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/tlo.jpg);
+    background-position: center;
+    background-size: center;
+    text-align: center;
+    color: #fff;
+
+}
+.sub-header h1{
+    margin-top: 25px;
+}
+
+/*--------------- search ------------*/
+
+
+.search-bar{
+    width: 100%;
+    max-width: 180px;
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 0px 10px;
+    backdrop-filter: blur(4px) saturate(150%);
+}
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 14px 10px;
+    font-size: 11px;
+    color: #cac7ff;
+}
+
+::placeholder{
+    color: #cac7ff;
+}
+
+.search-bar button img{
+    width: 10px;
+
+
+}
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background: #d4abae;
+    cursor: pointer;
+}
+
+.rejestracja-btn{
+    background: #d4abae;
+    backdrop-filter: blur(4px) saturate(170%);
+    border-radius: 60px;
+    padding: 0px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.rejestracja-btn:hover{
+    background: #c89d9f;
+    backdrop-filter: blur(4px) saturate(170%);
+    border-radius: 60px;
+    padding: 10px 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: center;
+    padding: 40px;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+
+.blog-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.blog-heading span{
+    color: #444D37;
+}
+
+.blog-heading h3{
+    font-size: 2.4rem;
+    color: #2b2b2b;
+    font-weight: 600;
+}
+
+.blog-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+.blog-box{
+    width: 350px;
+    background-color: #fffdff;
+    border: 1px solid #ececec;
+    margin: 20px;
+
+}
+
+.blog-img{
+    width: 100%;
+    height: auto;
+}
+
+.blog-img img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position:  center center;
+}
+
+.blog-text{
+    padding: 30px;
+    display:flex;
+    flex-direction: column;
+}
+
+.blog-text span{
+    color: #f33c3c;
+    font-size: 0.9rem;
+}
+
+.blog-text .blog-title{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #272727;}
+
+.blog-text .blog-title:hover{
+    color: #f33c3c;
+    transition: all ease 0.3s;
+}
+
+.blog-text p{
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+}
+.blog-text a{
+    color: #272727;
+}
+
+.blog-text a:hover{
+    color: #f33c3c;
+    transition: all ease 0.3s;
+}
+
+.artykuly-col a{
+    color: #272727;
+    margin-left: 100px;
+}
+
+.artykuly-col a:hover{
+    color: #f33c3c;
+    transition: all ease 0.3s;
+}
+.sub-rejestracja{
+    display: none;
+}
+
+
+/*---jakbym chciala na rozowo artykuly jednak----
+.artykuly-col img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position:  center center;
+}
+---*/
+/*
+.logowanie-btn{
+    background: transparent;
+    border-radius: 60px;
+    padding: 0px 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+
+.sub-logowanie{
+    display: none;
+    z-index: 1;
+}
+
+.nav_links ul li:hover .sub-logowanie{
+    display: block;
+    position:absolute;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.nav_links ul li:hover .sub-logowanie ul{
+    display: block;
+    margin:10px;
+    border-radius: 60px;
+    padding: 0px 10px;
+    backdrop-filter: blur(4px) saturate(150%);
+    background: rgba(255,255,255,0.2);
+}
+
+.nav_links ul li:hover .sub-logowanie ul li{
+    width: 150px;
+    padding: 15px;
+    border-bottom: 1px dotted #EDC6C9;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    
+}
+
+.nav_links ul li:hover .sub-logowanie ul li:last-child{
+    border-bottom: none;
+}
+
+.nav_links ul li:hover .sub-logowanie ul li a:hover
+{
+    color:#EDC6C9;
+}
+*/
+.dropdown .dropbtn {
+    background: transparent;
+    border-radius: 60px;
+    border-color: transparent;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    margin:10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    backdrop-filter: blur(4px) saturate(150%);
+    background: rgba(255,255,255,0.2);
+  }
+  
+
+  .dropdown-content {
+    
+    display: none;
+    position: absolute;
+    margin:10px;
+    border-radius: 40px;
+    padding: 0px 10px;
+    background: #d4abae;
+    z-index: 1;
+  }
+  .dropdown-content a:last-child{
+    border-bottom: none;
+  }
+  
+  .dropdown-content a {
+    border-bottom: 1px dotted #EDC6C9;
+    color:#444D37;
+    padding: 12px 16px;
+    display: block;
+  }
+  
+  .dropdown-content  a:hover {
+    color:#444D37;
+  }
+  
+  .show {display: block;}
+  
+  /*------sticky rejestracja----*/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+.komentarze-col h4{
+    text-decoration: none;
+}

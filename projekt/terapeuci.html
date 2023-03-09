@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="with=device-width, initial-scale = 1.0" />
+    <title>Terapia dla par</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/jpg" href="images/ikonka.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+  </head>
+
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html">
+          <img src="images/logo4.png" alt="Logo" width="50" height="80"
+        /></a>
+        <div class="nav_links">
+          <ul>
+            <li>
+              <div class="search">
+                <form
+                  action="https://www.google.com/search"
+                  method="get"
+                  class="search-bar"
+                >
+                  <input
+                    type="text"
+                    placeholder="wyszukaj co potrzeba :))"
+                    name="q"
+                  />
+                  <button type="submit"><img src="images/search.png" /></button>
+                </form>
+              </div>
+            </li>
+
+            <li><a href="index.html" id="podkreslenie">STRONA GŁÓWNA</a></li>
+            <li>
+              <a href="terapeuci.html" id="podkreslenie">NASI TERAPEUCI</a>
+            </li>
+            <li><a href="artykuly.html" id="podkreslenie">BLOG</a></li>
+
+            <li class="bezpodkreslenia">
+              <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">
+                  ZALOGUJ SIĘ
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                  <ul>
+                    <li><a href="login.html">Jako pacjent</a></li>
+                    <li><a href="login.html">Jako terapeuta</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="rejestracja-btn">
+              <a href="rejestracja.html">ZAREJESTRUJ SIĘ</a>
+              <div class="sub-rejestracja">
+                <ul>
+                  <li><a href="#">Jako pacjent</a></li>
+                  <li><a href="#">Jako terapeuta</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <h1>Nasi Terapeuci</h1>
+    </section>
+
+    <section class="footer">
+      <h4>O Nas</h4>
+      <p>
+        Blakjdajdiowifoweifjweifefjeff fjiwefew<br />
+        ewhfowejfiw fhweojf bewufhoew fhuw buefwfj
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made with <3 by Kasia</p>
+    </section>
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
