@@ -1,5 +1,5 @@
 # terapia-dla-par
-Strona internetowa oferująca terapię dla par online HTML CSS JS
+Aplikacja internetowa oferująca terapię dla par online, zaprojektowana w HTML, CSS i JavaScript.
 ## Strona Główna
 
 ![_C__Users_Kasia_Desktop_projekt_projekt_index html(Nest Hub)](https://user-images.githubusercontent.com/94643456/224184427-57697851-1e62-44ee-a8f4-134fee327b9c.png)
