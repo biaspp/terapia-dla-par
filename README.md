@@ -1,4 +1,4 @@
-# terapia-dla-par
+# Terapia dla par online
 Aplikacja internetowa oferująca terapię dla par online, zaprojektowana w HTML, CSS i JavaScript.
 ## Strona Główna
 
